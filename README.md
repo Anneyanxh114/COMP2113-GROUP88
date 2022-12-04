@@ -11,11 +11,15 @@
 * Yan Xiaohan - 3035770604
 
 ### Game Description
-Many monsters suddenly appeared near the peaceful village, breaking the good life of people. To let the villagers back to a good and happy life, as the village's strongest and bravest man, you decided to enter the lair of the monsters to destroy them. You may choose your role as `Warrior` or `Mage` to fight. Warrior has better defend power while mage has better attack power.
-Using `w` `s` `a` `d` to control the player on the map. If you successfully arrive the exit without being killed or maintaining $20 money, you win the game.
+Many monsters suddenly appeared near the peaceful village, breaking the good life of people. To let the villagers back to a good and happy life, as the village's strongest and bravest man, you decided to enter the lair of the monsters to destroy them. You may choose your role as `Warrior` or `Mage` to fight. Warrior has better defend power while mage has better attack power. Using `w` `s` `a` `d` to control the player on the map. If you successfully arrive the exit without being killed or maintaining $20 money, you win the game.
 
 ### Quick Start Guide
-1. Choose the `START NEW GAME`
+1. Choose the `START NEW GAME` to start a new game
+2. choose your role & input your name
+3. Use `w` `s` `a` `d` to control the player on the map
+4. Try to reach the exit without being killed by the Monster
+5. Choose the `SAVE` to see the saved players
+6. Choose the `SUCCESSFUL PLAYER LIST` to check the successful players and their information
 
 ### Game Rules 
 `o` is the player <br>
