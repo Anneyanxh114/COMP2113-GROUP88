@@ -43,13 +43,13 @@ Many monsters suddenly appeared near the peaceful village, breaking the good lif
 ### Coding Requirements
 | Check | Requirements | Remarks |  
 | --- | --- | --- |  
-| ☑️ | Generation of random game sets or events  | - <cstdlib> to use rand() and srand() for random map <br>- <ctime> to generate seed for srand() <br>- <iomanip> to set width <br>- <string> for string manipulation <br>- Using switches, if-statements, and loops|  
-| ☑️ | Data structures for storing game status  | ✅|  
-| ☑️ | Dynamic memory management  | - using STL Map with a vector storing all the information of the player as value and player name as key|  
-| ☑️ | File input/output (e.g., for loading/saving game status)  | ✅|  
+| ☑️ | Generation of random game sets or events  | - `<cstdlib>` to use rand() and srand() for random maps and monsters<br>- `<ctime>` to generate seed for `srand()` <br>- `<iomanip>` to set width <br>- `<string>` for string manipulation <br>- Using switches, if-statements, and loops|  
+| ☑️ | Data structures for storing game status  | - Using bool, int, array, struct, and other basic data types <br>- Using STL `<map>` to store the player information|  
+| ☑️ | Dynamic memory management  | - Using STL `<map>` with a vector storing all the information of the player as value and player name as key|  
+| ☑️ | File input/output (e.g., for loading/saving game status)  | - Save the player information to `gamedoc.txt` <br>- Load the player information to the game|  
 | ☑️ | Program codes in multiple files  | - Implement codes header, custom classes (interface and implementation), struct, and functions separated from the main file|  
-| ☑️ | Proper indentation and naming styles  | ✅|  
-| ☑️ | In-code documentation | - Write documentations describing the meaning/function/inputs of functions and parameters|  
+| ☑️ | Proper indentation and naming styles  | - Name the functions and parameters with their meanings <br>- clear indentation|  
+| ☑️ | In-code documentation | - Write documentations describing the meanings/functions/inputs of functions and parameters|  
 | ☑️ | Tested on `academy11` server | - Tested|  
 
 
