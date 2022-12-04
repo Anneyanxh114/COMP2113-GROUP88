@@ -43,9 +43,9 @@ Many monsters suddenly appeared near the peaceful village, breaking the good lif
 ### Coding Requirements
 | Check | Requirements | Remarks |  
 | --- | --- | --- |  
-| ☑️ | Generation of random game sets or events  | - <cstdlib> to use rand() and srand() for random food location <br>- <ctime> to generate seed for srand() <br>- <iomanip> to set width <br>- <string> for string manipulation <br>- Using switches, if-statements, and loops|  
+| ☑️ | Generation of random game sets or events  | - <cstdlib> to use rand() and srand() for random map <br>- <ctime> to generate seed for srand() <br>- <iomanip> to set width <br>- <string> for string manipulation <br>- Using switches, if-statements, and loops|  
 | ☑️ | Data structures for storing game status  | ✅|  
-| ☑️ | Dynamic memory management  | ✅|  
+| ☑️ | Dynamic memory management  | - using STL Map with a vector storing all the information of the player as value and player name as key|  
 | ☑️ | File input/output (e.g., for loading/saving game status)  | ✅|  
 | ☑️ | Program codes in multiple files  | ✅|  
 | ☑️ | Proper indentation and naming styles  | ✅|  
