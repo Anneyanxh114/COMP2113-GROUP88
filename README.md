@@ -26,7 +26,7 @@ Using `w` `s` `a` `d`
 - Users can obtain money value after defeating the monsters;
 - The game progress can be paused;
 - The game progress is archived;
-- According to the attribute data comparison, players can get the ranking at the end of the game
+- According to the attribute data comparison, players can get the ranking at the end of the game.
 
 ### Coding Requirements
 | Check | Requirements | Remarks |  
