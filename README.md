@@ -1,21 +1,29 @@
 # COMP2113-GROUP88
 
-## (Name of the game)
+## The Dungeon
 
 ### Group 88
 ### Group Members:
-* Yan Xiaohan - 3035770604
-* Ya Yixin-3035844900
+* Chen Ning - 
 * Dong Fangyu - 3035845502
-* Chen Ning - 3035951624
-* 
+* Liu Peizhuo - 
+* Ya Yixin - 3035844900
+* Yan Xiaohan - 3035770604
 
 ### Game Description
-Using `w` `s` `a` `d`
+Many monsters suddenly appeared near the peaceful village, breaking the good life of people. To let the villagers back to a good and happy life, as the village's strongest and bravest man, you decided to enter the lair of the monsters to destroy them. You may choose your role as `Warrior` or `Mage` to fight. Warrior has better defend power while mage has better attack power.
+Using `w` `s` `a` `d` to control the player on the map. If you successfully arrive the exit without being killed or maintaining $20 money, you win the game.
 
 ### Quick Start Guide
+1. Choose the `START NEW GAME`
 
 ### Game Rules 
+`o` is the player <br>
+`#` is the Wall - hit the wall will make you lose <br>
+`%` is the Junk Shop - you can choose to buy the weapons or defend tools or leave the shop <br>
+`+` is the Supply Shop - you can choose to buy the supply food which adds value to your HP <br>
+`M` is the Monster - you need to fight with it and kill it <br>
+`*` is the Exit - if you reach it without being killed and you have no less than $20, you win the game <br>
 
 ### Game Features
 - Allow users to choose from different identidies;
@@ -31,7 +39,7 @@ Using `w` `s` `a` `d`
 ### Coding Requirements
 | Check | Requirements | Remarks |  
 | --- | --- | --- |  
-| ☑️ | Generation of random game sets or events  | ✅|  
+| ☑️ | Generation of random game sets or events  | - <cstdlib> to use rand() and srand() for random food location <br>- <ctime> to generate seed for srand() <br>- <iomanip> to set width <br>- <string> for string manipulation <br>- Using switches, if-statements, and loops|  
 | ☑️ | Data structures for storing game status  | ✅|  
 | ☑️ | Dynamic memory management  | ✅|  
 | ☑️ | File input/output (e.g., for loading/saving game status)  | ✅|  
