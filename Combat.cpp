@@ -399,7 +399,7 @@ Player fight(Player p){
   if((monster.HP)<=0){//杀死怪物后的返回
       cout<<"You killed the "<<monster.Name<<" !!!!!!!"<<endl;
       cout<<"The death of monster "<<monster.Name<<" generates "<<monster.Value*monster.Value<<" more money for you!"<<endl;
-      cout<<"PRESS ANY KEY, TO CONTINUE";
+      cout<<"PRESS ANY KEY, TO CONTINUE"<<endl;
       MoneyTri(monster.Value);
       p.Money+=(monster.Value);
       // break;
