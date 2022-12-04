@@ -47,10 +47,10 @@ Many monsters suddenly appeared near the peaceful village, breaking the good lif
 | ☑️ | Data structures for storing game status  | ✅|  
 | ☑️ | Dynamic memory management  | - using STL Map with a vector storing all the information of the player as value and player name as key|  
 | ☑️ | File input/output (e.g., for loading/saving game status)  | ✅|  
-| ☑️ | Program codes in multiple files  | ✅|  
+| ☑️ | Program codes in multiple files  | - Implement codes header, custom classes (interface and implementation), struct, and functions separated from the main file|  
 | ☑️ | Proper indentation and naming styles  | ✅|  
-| ☑️ | In-code documentation | ✅|  
-| ☑️ | Tested on `academy11` server | ✅|  
+| ☑️ | In-code documentation | - Write documentations describing the meaning/function/inputs of functions and parameters|  
+| ☑️ | Tested on `academy11` server | - Tested|  
 
 
 ### References
