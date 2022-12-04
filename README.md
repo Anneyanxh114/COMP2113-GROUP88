@@ -4,7 +4,7 @@
 
 ### Group 88
 ### Group Members:
-* Chen Ning - 
+* Chen Ning - 3035951624
 * Dong Fangyu - 3035845502
 * Liu Peizhuo - 
 * Ya Yixin - 3035844900
