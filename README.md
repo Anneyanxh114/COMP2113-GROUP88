@@ -18,7 +18,15 @@ Using `w` `s` `a` `d`
 ### Game Rules 
 
 ### Game Features
- 
+- Allow users to choose from different identidies;
+- Enable users to do purchase in various store to enhance attributes;
+- Generate random mazes where users can move in using keyboard operations;
+- Set random types of monsters in the maze which users may encounter when running through;
+- Users can use different functions to combat monsters;
+- Users can obtain money value after defeating the monsters;
+- The game progress can be paused;
+- The game progress is archived;
+- According to the attribute data comparison, players can get the ranking at the end of the game
 
 ### Coding Requirements
 | Check | Requirements | Remarks |  
