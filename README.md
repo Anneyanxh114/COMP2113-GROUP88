@@ -18,7 +18,7 @@ Using `w` `s` `a` `d`
 ### Game Rules 
 
 ### Game Features
-1. Menu, 
+ 
 
 ### Coding Requirements
 | Check | Requirements | Remarks |  
