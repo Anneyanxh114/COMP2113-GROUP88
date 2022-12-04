@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string.h>
-#include<algorithm>
+#include <algorithm>
 #include <map>
-#include<vector>
+#include <vector>
 #include <fstream>
 #include <cstdlib>
 #include "Menu_Operator.h"
@@ -259,3 +259,67 @@ Player Dungeon::SupplyShop(Player p){//补给店
     return p;
 } 
  
+
+/**
+ * @brief save the parameters of the players to a txt file called "gamedoc.txt"
+ * the parameters includes name, HP, ATK, DEF, Money, PersonalBest, Career
+ * 
+ * @param Records 
+ */
+void Dungeon::saveDoc(map<string, Player> Records){
+  ofstream fout; 
+  fout.open("gamedoc.txt");
+  if ( fout.fail() ) {
+    cout << "Error in file opening!" << endl; exit(1);
+  }
+  map<string, Player>::iterator itr;
+  for (itr = Records.begin(); itr != Records.end(); itr++) {
+    fout << "Player: " << (*itr).first << " HP: " << (*itr).second.HP
+        << " ATK: " << (*itr).second.ATK << " DEF: " << (*itr).second.DEF <<  " Money: " << (*itr).second.Money 
+        << " Score: " << (*itr).second.HP*2 + (*itr).second.Money << " Career: " << (*itr).second.Career <<  endl;
+  }
+  fout.close();
+}
+
+
+
+/*
+ * print the players and their information
+ */
+void Dungeon::rankMenu(){
+    char filename[80] = "gamedoc.txt";
+    ifstream fin;
+    fin.open(filename);
+    if(fin.fail()){
+        cout << "Error in file opening!" << endl;
+        exit(1);
+    }
+    string line;
+    int rank = 1;
+    while(getline(fin, line)){ 
+        setPos(35,11+(rank-1)*2);
+        cout << rank << " " << line << endl;
+        cout << endl;
+        rank++;
+    }
+}
+
+/**
+ * @brief print the information of the player
+ * 
+ * @param p 
+ */
+void printPlayer(Player p){
+    if(p.Name.length() >= 2){
+        cout << "\033[2K";
+        cout<<"Name: " << p.Name << "\tHP: " << p.HP << endl;
+    }else{
+        cout << "\033[2K";
+        cout<<"Name: " << p.Name << "\t\tHP: " << p.HP << endl;
+    }
+    cout << "\033[2K";
+    cout << "ATK: " << p.ATK << "\tDEF: " << p.DEF << endl;
+    cout << "\033[2K";
+    cout << "Money: " << p.Money << endl;
+}
+
