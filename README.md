@@ -48,10 +48,11 @@ Many monsters suddenly appeared near the peaceful village, breaking the good lif
 | ☑️ | Dynamic memory management  | - Using STL `<map>` with a vector storing all the information of the player as value and player name as key|  
 | ☑️ | File input/output (e.g., for loading/saving game status)  | - Save the player information to `gamedoc.txt` <br>- Load the player information to the game|  
 | ☑️ | Program codes in multiple files  | - Implement codes header, custom classes (interface and implementation), struct, and functions separated from the main file|  
-| ☑️ | Proper indentation and naming styles  | - Name the functions and parameters with their meanings <br>- clear indentation|  
+| ☑️ | Proper indentation and naming styles  | - Name the functions and parameters with their meanings <br>- Clear indentation|  
 | ☑️ | In-code documentation | - Write documentations describing the meanings/functions/inputs of functions and parameters|  
 | ☑️ | Tested on `academy11` server | - Tested|  
 
 
 ### References
 #### Non-standard C/C++ libraries
+https://blog.csdn.net/yemao_guyue/article/details/43105253
