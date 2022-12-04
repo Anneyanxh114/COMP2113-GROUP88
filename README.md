@@ -7,7 +7,7 @@
 * Yan Xiaohan - 3035770604
 * Ya Yixin-3035844900
 * Dong Fangyu - 3035845502
-* 
+* Chen Ning - 3035951624
 * 
 
 ### Game Description
