@@ -1,0 +1,5 @@
+Player: 0000 HP: 1925 ATK: 150 DEF: 200 Money: 164 PersonalBest: 0 Career: Warrior
+Player: 2 HP: 2395 ATK: 150 DEF: 200 Money: 52 PersonalBest: 0 Career: Warrior
+Player: 333 HP: 1995 ATK: 150 DEF: 200 Money: 130 PersonalBest: 0 Career: Warrior
+Player: dfy HP: 1300 ATK: 510 DEF: 770 Money: 30 PersonalBest: 0 Career: Warrior
+Player: lpz HP: 1 ATK: 1000 DEF: 1000 Money: 1000 PersonalBest: 0 Career: Mage
