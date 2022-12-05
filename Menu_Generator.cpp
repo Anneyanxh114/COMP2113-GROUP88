@@ -27,7 +27,7 @@ Player savesMenu(map<string, Player> &Records){
 
 
     if(totalSaves == 0){
-        //totalSaves = -1代表没有记录
+        //totalSaves = -1 means there's no records
     }
 
     setPos(35, 9);
@@ -128,7 +128,7 @@ Player mainMenu(map<string, Player> &Records){ //May need to set the initial mou
     setPos(35,13);
     cout<<"SAVES";
     setPos(35,15);
-    cout<<"RANK LIST";
+    cout<<"SUCCESSFUL PLAYER LIST";
     setPos(35,17);
     cout<<"EXIT";
     setPos(35,11);
@@ -154,12 +154,12 @@ Player mainMenu(map<string, Player> &Records){ //May need to set the initial mou
                 return p;
             }else if(lineNum == 1){
                 clear();
-                p = savesMenu(Records);//存档
+                p = savesMenu(Records);// save the records of the game
                 return p;
             }
             else if(lineNum == 2){
                 clear();
-                p = rankMenu(Records);//排名
+                p = rankMenu(Records);// print the rankMenu
                 return p;
             }
             else if(lineNum == 3){

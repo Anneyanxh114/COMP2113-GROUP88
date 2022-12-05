@@ -9,18 +9,19 @@ int MONSTER_PR = 10;
 int SUPPLY_PR = 2;
 int JUNK_PR = 4;
 
-
-
 struct element{
-    int x;
-    int y;
-    bool wall; //false代表路true代表墙
+    int x; // x axis of the map
+    int y; // y axis of the map
+    bool wall; //false represents the road and true represents the wall
     bool visited = false;
 };
 
-
+/**
+ * @brief map generator: randomly generate a map with money, juckshop, supplyshop, and monsters
+ * 
+ * @return char** 
+ */
 char** generateMap(){
-
     element ** map = new element*[21]; 
     for(int i = 0; i < 21; i ++){
         map[i] = new element[21];
@@ -41,22 +42,15 @@ char** generateMap(){
     A.push_back(&map[1][2]);
     A.push_back(&map[2][1]);
     int size = A.size();
-    // cout << "Test 1" << endl;
     while(size > 0){
         element* new_e = NULL;
         int index = rand() % size;
         element* current;
         list<element*>::const_iterator itr = A.begin();
-        // cout << "Test 2: ";
-        // cout << index << " " << size <<endl;
         advance(itr, index);
         current = *itr; 
-        // cout << current -> x << " " << current -> y << endl;
         A.remove(*itr);
         if(current -> x % 2 == 0 && current -> y % 2 != 0){
-            // cout << "if 1" << endl;
-            // cout << map[current -> x - 1][current -> y].visited << endl;
-            // cout << map[current -> x + 1][current -> y].visited << endl;
             if(!map[current -> x - 1][current -> y].visited || !map[current -> x + 1][current -> y].visited){
                 // cout << "if 2" << endl;
                 current -> wall = false;
@@ -68,16 +62,10 @@ char** generateMap(){
                     map[current -> x + 1][current -> y].visited = true;
                     new_e = &map[current -> x + 1][current -> y];
                 }
-
-            }
-            
+            }   
         }
         if(current -> x % 2 != 0 && current -> y % 2 == 0){
-            // cout << "if 1" << endl;
-            // cout << map[current -> x][current -> y - 1].visited << endl;
-            // cout << map[current -> x][current -> y + 1].visited << endl;
             if(!map[current -> x][current -> y - 1].visited || !map[current -> x][current -> y + 1].visited){
-                // cout << "if 2" << endl;
                 current -> wall = false;
                 if(current -> y - 1 > 0 && !map[current -> x][current -> y - 1].visited){
                     map[current -> x][current -> y - 1].visited = true;
@@ -90,9 +78,7 @@ char** generateMap(){
 
             }
         }
-        // cout << "Test 3" << endl;
         if(new_e != NULL){
-            // cout << "Test 3" << new_e -> x << " " << new_e -> y << endl;
             if(new_e -> x + 1 < 20 && map[new_e -> x + 1][new_e -> y].wall)
                 A.push_back(&map[new_e -> x + 1][new_e -> y]);
             if(new_e -> y + 1 < 20 && map[new_e -> x][new_e -> y + 1].wall)
@@ -103,8 +89,6 @@ char** generateMap(){
                 A.push_back(&map[new_e -> x][new_e -> y - 1]);
         }
         size = A.size();
-            
-
     }
     char ** m = new char*[21]; 
     int pr;
@@ -144,23 +128,22 @@ char** generateMap(){
         }
     }
 
-    m[1][1] = 'o';
-    m[19][19] = '*';
-
+    m[1][1] = 'o'; // the position of the player
+    m[19][19] = '*'; // the exit of the puzzle
 
     for(int i=0; i<21; i++){
         delete[] map[i];
     } 
-        
     return m;   
 }
 
+/**
+ * @brief print the map
+ * 
+ * @param map 
+ */
 void printMap(char **map){
     for (int i =0;i<=20;i++){
             puts(map[i]);
     }
 }
-
-// int main(){
-//     printMap(generateMap());
-// }
