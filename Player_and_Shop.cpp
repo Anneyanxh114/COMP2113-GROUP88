@@ -180,7 +180,7 @@ Player Dungeon::JunkShop(Player p){
  * @param p 
  * @return Player 
  */
-Player Dungeon::SupplyShop(Player p){//补给店
+Player Dungeon::SupplyShop(Player p){
     cout << "\033[3A";
     cout << "\033[J";
     printPlayer(p);
@@ -310,7 +310,7 @@ void Dungeon::rankMenu(){
  * @param p 
  */
 void printPlayer(Player p){
-    if(p.Name.length() >= 2){
+    if(p.Name.length() >= 2){ // length of the name should be no less than 2
         cout << "\033[2K";
         cout<<"Name: " << p.Name << "\tHP: " << p.HP << endl;
     }else{
