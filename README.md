@@ -18,8 +18,9 @@ Many monsters suddenly appeared near the peaceful village, breaking the good lif
 2. choose your role & input your name
 3. Use `w` `s` `a` `d` to control the player on the map
 4. Try to reach the exit without being killed by the Monster
-5. Choose the `SAVE` to see the saved players
-6. Choose the `SUCCESSFUL PLAYER LIST` to check the successful players and their information
+5. Press `p` to pause the game
+6. Choose the `SAVE` to see the saved players
+7. Choose the `SUCCESSFUL PLAYER LIST` to check the successful players and their information
 
 ### Game Rules 
 `o` is the player <br>
