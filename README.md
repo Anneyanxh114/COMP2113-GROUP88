@@ -6,7 +6,7 @@
 ### Group Members:
 * Chen Ning - 3035951624
 * Dong Fangyu - 3035845502
-* Liu Peizhuo - 
+* Liu Peizhuo - 3035951911
 * Ya Yixin - 3035844900
 * Yan Xiaohan - 3035770604
 
