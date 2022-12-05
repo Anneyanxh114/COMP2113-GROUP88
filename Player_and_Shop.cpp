@@ -9,7 +9,6 @@
 #include "Player_and_Shop.h"
 using namespace std;
 
-
 /**
  * @brief Choose the role of the player: warrior/mage
  * input the name of the player and display the welcome words
@@ -129,7 +128,7 @@ Player Dungeon::JunkShop(Player p){
                     p.Money-=4; 
                     break; 
                 }  
-            //buy shield
+            //buy Shield
             case 6 :
                 if (p.Money < 7){
                     cout<<"You don't have enough money"<<endl;                    
@@ -200,14 +199,12 @@ Player Dungeon::SupplyShop(Player p){
             if(p.Money<10){
                 cout<<"You don't have enough money"<<endl; 
             } 
-        
             else {
                 cout<<"Successful purchase!"<<endl; 
                 p.HP+=500; 
                 p.Money-=10; 
                 break; 
             } 
-        
         case 2 : 
             if(p.Money<50){
                 cout<<"You don't have enough money"<<endl; 
@@ -233,7 +230,6 @@ Player Dungeon::SupplyShop(Player p){
         
         }
         cout << "\033[10A";
-        // cout << "\033[J";
         printPlayer(p);
         cout << "\033[2K";
         cout<<"Welcome to the Supply Shop!"<<endl; 
@@ -258,7 +254,6 @@ Player Dungeon::SupplyShop(Player p){
     } 
     return p;
 } 
- 
 
 /**
  * @brief save the parameters of the players to a txt file called "gamedoc.txt"
@@ -280,7 +275,6 @@ void Dungeon::saveDoc(map<string, Player> Records){
   }
   fout.close();
 }
-
 
 
 /*
